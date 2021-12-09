@@ -66,4 +66,54 @@ if(kind === 'fantasia' && ticket === 15){
     console.log('Escolha outro filme :(')
 }
 
+
+// Exemplos de for + if dentro da function:
+function handleArr(ar){
+    let sum = 0;
+    for(const number of ar){
+        sum += number
+}
+        if(sum > 0){
+            return sum 
+        }else{
+            return 'É zero'
+        }
+} 
+console.log(handleArr([12,8,30]))    //50
+//-----------------
+function comparaArr(a,b){
+    let pontos = 0
+    for(let i = 0; i < a.length; i++){
+    pontos++
+}
+return pontos
+}
+console.log(comparaArr([1,2,2], [1,1,1]))  //2
+
+//Exemplo de objeto + função:
+const pokemons = [
+    {nome: "Bulbasaur", tipo: "grama"},
+    {nome: "Bulsprout", tipo: "grama"},
+    {nome: "Charmander", tipo: "fogo"},
+    {nome: "Vulpix", tipo: "fogo"},
+    {nome: "Squirtle", tipo: "água"},
+    {nome: "Psyduck", tipo: "água"},
+
+]
+const callback = (pokemon, indice, array) =>{
+    if(pokemon.tipo ==="grama"){
+        return true
+    }else{
+        return false
+    }
+}
+const algunsPokemons = pokemons.filter(callback, 1)
+console.log(algunsPokemons)
+//0: {nome: 'Bulbasaur', tipo: 'grama'}
+//1: {nome: 'Bulsprout', tipo: 'grama'}
+
+
 //Desafio
+//1.
+
+//2.
