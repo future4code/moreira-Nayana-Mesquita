@@ -31,6 +31,13 @@ function getTwoCards(){
 getTwoCards();
 console.log( playerCards,pcCards );
 
+//Distribuição das 2 cartas iniciais do jogo (maneira simples):
+/* let cartaUsuario = [comprarCarta(), comprarCarta()]
+let cartaComputador = [comprarCarta(), comprarCarta()]
+console.log(cartaUsuario)
+console.log(cartaComputador) */
+
+
 //Definindo a pontuação dos jogadores:
 const addingPointsPlayer = playerCards.reduce( ( prevVal, value ) => prevVal + value.valor, 0)
 console.log( addingPointsPlayer )
